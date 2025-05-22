@@ -21,3 +21,5 @@ fs.appendFile('logs.txt', mensagem, 'utf8', (err) => {
       console.log('Adicionado com sucesso');
   }
 });
+
+adicionarLog('Ana Carolina Will')
