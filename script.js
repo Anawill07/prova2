@@ -5,3 +5,10 @@ fs.writeFileSync('logs.txt', 'Log inicial\n', (err) => {
   if (err) throw err;
   console.log('Arquivo logs.txt criado!');
 });
+
+function adicionarLog(nomeAluno){
+const mensagem = `${idUnico}, ${dataHora}, ${nomeAluno}/n`;
+fs.appendFile('logs.txt', mensagem, 'utf8', (err) => {
+});
+}
+
