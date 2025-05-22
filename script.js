@@ -18,4 +18,4 @@ fs.appendFile('logs.txt', mensagem, 'utf8', (err) => {
   }
 });
 }
-adicionarLog('Ana Carolina Will')
+adicionarLog('Ana Carolina Will');
