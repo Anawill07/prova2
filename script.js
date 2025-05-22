@@ -7,8 +7,9 @@ fs.writeFileSync('logs.txt', 'Log inicial\n', (err) => {
 });
 
 function adicionarLog(nomeAluno){
+  const idUnico = uuid();
+  const dataHora = new Date().toLocaleString("pt-BR");
 const mensagem = `${idUnico}, ${dataHora}, ${nomeAluno}/n`;
 fs.appendFile('logs.txt', mensagem, 'utf8', (err) => {
 });
 }
-
